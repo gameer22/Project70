@@ -53,7 +53,18 @@
  */
 
 int findBestMarkNumber(int* marks, int size) {
-	
+	if (size < 7) {
+		return -1;
+	}
+
+	for (int i = 0; i < size; i++)
+	{
+		if (marks[i] < 2 && marks[i] > 5) {
+			return -1;
+		}
+	}
+
+
 
 	return -1;
 }
